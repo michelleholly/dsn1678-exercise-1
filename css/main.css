@@ -6,9 +6,6 @@
 
 html {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-
   font: normal 100%/1.5 sans-serif;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -18,11 +15,19 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
+    margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0;
   padding: 0;
+}
+
+.wrapper {
+    border: #666;
+    border-radius:;
+    
 }
 
 img {
@@ -34,12 +39,35 @@ img {
     position: relative;
 }
 
-.cap {
+.fig > figcaption {
     position: absolute;
     color: #fff;
-    background-color: #8e8c8c;
+    background-color: rgba(0,0,0,.25);
+    font-family: serif;
+    bottom: 0;
+    width: 100%;
 }
 
 .title {
-    padding: 5%;
+    padding: 1rem;
+}
+
+.info {
+    float: left;
+    padding: 0 1rem 0 .25rem;
+    width: 33.33%;
+    border-left: solid 1px #666;
+}
+
+.noline {
+    border-left: none;
+    padding: 0 1rem 0 0;
+}
+
+.head {
+    color: #8e8c8c;
+}
+
+.space {
+    margin-left: 1rem;   
 }
